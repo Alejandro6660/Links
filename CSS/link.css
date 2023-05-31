@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700&display=swap");
+/* ====== variables ====== */
+:root {
+  --body-color: #18191a;
+  --text-color: #ccc;
+  --btn-color: #fff;
+  --primary-color: #0b7dff;
+}
+
+/* ====== Reseteo ====== */
+* {
+  padding: 0%;
+  margin: 0%;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-color);
+  overflow-x: hidden;
+}
+
+/* ====== Utilities ====== */
+
+.text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  max-width: 17ch;
+}
+.section {
+  width: 100%;
+  height: calc(100vh - 13rem);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.footer {
+  width: 100%;
+  height: 2.8rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== web ====== */
+.header {
+  width: 100%;
+  height: 10rem;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
+.header .image-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-text .image img {
+  width: 80px;
+  height: 90px;
+  margin-bottom: -5px;
+}
+.header .header-text {
+  margin-top: -10px;
+  font-weight: 600;
+}
+.buttons {
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  margin: 0% auto;
+  display: flex;
+  align-items: center;
+}
+.buttons .button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.button .btn-box {
+  width: 80vw;
+  max-width: 600px;
+  height: 2.5rem;
+  margin: 0 auto;
+  padding: 0 5px;
+  background-color: #242526;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translate(0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+.button .btn-box:hover span i,
+.button .btn-box:hover span {
+  color: var(--primary-color);
+}
+
+.btn-box .btn-icon i {
+  color: var(--btn-color);
+}
+.btn-box .btn-text {
+  color: var(--btn-color);
+}
+.footer .text-span {
+  max-width: 30ch;
+  font-size: 0.5rem;
+}
+.footer a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.5rem;
+}
+.footer a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
